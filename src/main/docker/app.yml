@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  nextlevel-app:
+    build: ../../..
+    container_name: nextlevel-app
+    environment:
+    ports:
+      - 8081:8081
