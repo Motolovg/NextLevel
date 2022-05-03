@@ -1,0 +1,50 @@
+{
+  "name": "Empresa",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "regiao",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nicho",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "site",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "empresa",
+      "relationshipName": "user",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "influenciador",
+      "otherEntityRelationshipName": "empresa",
+      "relationshipName": "influenciador",
+      "otherEntityField": "nome",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "empresa",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20220503014610"
+}

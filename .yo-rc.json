@@ -49,6 +49,8 @@
     "cacheProvider": "ehcache",
     "buildTool": "maven",
     "enableHibernateCache": true,
-    "reactive": false
+    "reactive": false,
+    "entities": ["Empresa", "Influenciador"],
+    "lastLiquibaseTimestamp": 1651542371000
   }
 }

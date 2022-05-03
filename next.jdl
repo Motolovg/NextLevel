@@ -1,0 +1,47 @@
+
+
+entity Empresa {
+	nome String required,
+    regiao String,
+    nicho String,
+    site String unique
+    
+}
+
+entity Influenciador {
+	nome String required,
+    email String unique,
+    regiao String,
+    bio String,
+    redes String
+    
+}
+
+
+enum Linguagem {
+    PORTUGUESE, ENGLISH, SPANISH
+}
+
+relationship ManyToMany {
+	Empresa {influenciador(nome)} to Influenciador{Empresa} 
+}
+
+relationship OneToOne { 
+	Empresa {user} to User
+    Influenciador {user} to User
+}
+
+
+
+// Set pagination options
+paginate Empresa with pagination
+paginate Influenciador with pagination
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Empresa, Influenciador
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

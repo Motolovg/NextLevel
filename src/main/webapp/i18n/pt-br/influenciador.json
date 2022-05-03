@@ -1,0 +1,30 @@
+{
+  "nextLevelApp": {
+    "influenciador": {
+      "home": {
+        "title": "Influenciadors",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Influenciador",
+        "createOrEditLabel": "Criar ou editar Influenciador",
+        "notFound": "Nenhum Influenciador encontrado"
+      },
+      "created": "Um novo Influenciador foi criado com o identificador {{ param }}",
+      "updated": "Um Influenciador foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Influenciador foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Influenciador {{ id }}?"
+      },
+      "detail": {
+        "title": "Influenciador"
+      },
+      "id": "ID",
+      "nome": "Nome",
+      "email": "Email",
+      "regiao": "Regiao",
+      "bio": "Bio",
+      "redes": "Redes",
+      "user": "User",
+      "empresa": "Empresa"
+    }
+  }
+}
