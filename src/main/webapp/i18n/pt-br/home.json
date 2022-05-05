@@ -1,13 +1,13 @@
 {
   "home": {
-    "title": "Bem vindo, Java Hipster!",
+    "title": "Bem vindo ao Next Level",
     "subtitle": "Esta é a página principal",
     "logged": {
       "message": "Você está logado como \"{{username}}\"."
     },
-    "question": "Em caso de dúvida sobre o JHipster:",
+    "question": "Em caso de dúvida sobre o NextLevel:",
     "link": {
-      "homepage": "Página principal JHipster",
+      "homepage": "Página principal NetxLevel",
       "stackoverflow": "JHipster no Stack Overflow",
       "bugtracker": "JHipster bug tracker",
       "chat": "Sala de bate-papo pública JHipster",
